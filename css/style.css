@@ -1,5 +1,5 @@
 /***********************
-		General
+		GENERAL
 ************************/
 
 ul {
@@ -10,3 +10,31 @@ li {
 	display: inline-block;
 }
 
+/***********************
+		HEADING
+************************/
+
+#top-nav {
+	float: right;
+}
+
+/***********************
+	SEARCH ENGINE UI
+************************/
+
+main {
+	clear: both;
+	text-align: center;
+}
+
+/***********************
+		FOOTER
+************************/
+
+#left-nav {
+	float: left;
+}
+
+#right-nav {
+	float: right;
+}
