@@ -2,8 +2,10 @@
 		GENERAL
 ************************/
 
+html,
 body {
 	margin: 0;
+	height: 100%;
 	font-family: arial,sans-serif;
 }
 
@@ -34,6 +36,7 @@ a {
 main {
 	clear: both;
 	text-align: center;
+	padding-top: 100px;
 }
 
 main img {
@@ -52,6 +55,12 @@ main img {
 /***********************
 		FOOTER
 ************************/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
 
 #left-nav {
 	float: left;
