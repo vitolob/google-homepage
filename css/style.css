@@ -3,6 +3,7 @@
 ************************/
 
 body {
+	margin: 0;
 	font-family: arial,sans-serif;
 }
 
@@ -35,9 +36,17 @@ main {
 	text-align: center;
 }
 
+main img {
+	margin-bottom: 25px;
+}
+
 #search-box {
 	width: 570px;
 	height: 23px;
+}
+
+#search-buttons {
+	margin-top: 15px;
 }
 
 /***********************
