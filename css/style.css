@@ -2,12 +2,20 @@
 		GENERAL
 ************************/
 
+body {
+	font-family: arial,sans-serif;
+}
+
 ul {
 	list-style: none;
 }
 
 li {
 	display: inline-block;
+}
+
+a {
+	text-decoration: none;
 }
 
 /***********************
@@ -25,6 +33,11 @@ li {
 main {
 	clear: both;
 	text-align: center;
+}
+
+#search-box {
+	width: 570px;
+	height: 23px;
 }
 
 /***********************
