@@ -27,7 +27,8 @@ a {
 
 #top-nav {
 	float: right;
-	padding-right: 30px;
+	padding-right: 25px;
+	margin-bottom: 46px;
 }
 
 #top-nav li {
@@ -63,7 +64,7 @@ a {
 
 #top-nav button {
 	border: 0;
-	padding: 7.5px 12px;
+	padding: 7.5px 13px;
 	color: #fff;
 	font-weight: bold;
 	background: #4285f4;
@@ -81,7 +82,7 @@ main {
 }
 
 main img {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 #search-box {
@@ -97,7 +98,10 @@ main img {
 	color: #444;
 	border: 1px solid #dcdcdc;
 	background: #f5f5f5;
-	padding: 7.5px 12px;
+	padding: 7.5px 8px;
+	margin: 0 6px;
+	font-weight: bold;
+	font-size: 11px;
 }
 
 /***********************
@@ -110,8 +114,7 @@ footer {
 	width: 100%;
 	font-size: small;
 	background: #f2f2f2;
-	border: 1px solid #e4e4e4;
-	box-sizing: border-box;
+	border-top: 1px solid #e4e4e4;
 }
 
 footer a {
@@ -120,14 +123,14 @@ footer a {
 
 #left-nav {
 	float: left;
-	padding-left: 15px;
+	padding-left: 17px;
 }
 
 #right-nav {
 	float: right;
+	padding-right: 17px;
 }
 
 #left-nav li, #right-nav li {
-	padding: 0 15px;
+	padding: 0 13px;
 }
-
