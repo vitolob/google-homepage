@@ -86,8 +86,20 @@ main img {
 }
 
 #search-box {
-	width: 570px;
-	height: 23px;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0,0,0,.15);
+	width: 524px;
+	height: 18px;
+	padding: 5px 37px 5px 9px;
+}
+
+input#search-box:hover {
+	border-color: rgba(0,0,0,.3);
+}
+
+input#search-box:focus {
+	border: 1px solid #4285f4;
+	outline: 0;
 }
 
 #search-buttons {
@@ -102,6 +114,11 @@ main img {
 	margin: 0 6px;
 	font-weight: bold;
 	font-size: 11px;
+}
+
+#search-buttons button:focus {
+	border: 1px solid #4285f4;
+	outline: 0;
 }
 
 /***********************
