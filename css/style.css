@@ -138,6 +138,10 @@ footer a {
 	color: #666;
 }
 
+footer a:hover {
+	text-decoration: underline;
+}
+
 #left-nav {
 	float: left;
 	padding-left: 17px;
