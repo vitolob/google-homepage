@@ -5,36 +5,54 @@
 	<title>Google</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<header>
-		<ul id="top-nav">
-			<li><a href="https://plus.google.com/">+You</a></li>
-			<li><a href="https://mail.google.com/mail/">Gmail</a></li>
-			<li><a href="https://www.google.com/imghp">Images</a></li>
-			<li><span id="menu-button"></span></li>
-			<li><button>Sign in</button></li>
-		</ul>
-	</header>
-	<main>
-		<img src="https://www.google.com/images/srpr/logo11w.png" height="95px">
-		<br />
-		<input type="text" id="search-box">
-		<div id="search-buttons">
-			<button>Google Search</button>
-			<button>I'm Feeling Lucky</button>
-		</div>
-	</main>
-	<footer>
-		<ul id="left-nav">
-			<li><a href="https://www.google.com/intl/en/ads/">Advertising</a></li>
-			<li><a href="https://www.google.com/services/">Business</a></li>
-			<li><a href="https://www.google.com/intl/en/about.html">About</a></li>
-		</ul>
-		<ul id="right-nav">
-			<li><a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a></li>
-			<li><a href="https://www.google.com/preferences">Settings</a></li>
-			<li><a href="https://www.google.co.mz">Use Google.co.mz</a></li>
-		</ul>
-	</footer>
+<body onload="inputFocus()">
+	<div id="wrapper" class="min-window">
+		<header>
+			<ul id="top-nav">
+				<li><a href="https://plus.google.com/">+You</a></li>
+				<li><a href="https://mail.google.com/mail/">Gmail</a></li>
+				<li><a href="https://www.google.com/imghp">Images</a></li>
+				<li><span id="menu-button"></span></li>
+				<li><button>Sign in</button></li>
+			</ul>
+		</header>
+		<main>
+			<img src="https://www.google.com/images/srpr/logo11w.png" height="95px">
+			<br />
+			<span id="box" tabindex="0" onfocus="inputFocus()">
+				<input type="text" id="search-box" onfocus="changeColor()" onblur="defaultColor()">
+			</span>
+			<div id="search-buttons">
+				<button>Google Search</button>
+				<button>I'm Feeling Lucky</button>
+			</div>
+		</main>
+		<footer>
+			<ul id="left-nav">
+				<li><a href="https://www.google.com/intl/en/ads/">Advertising</a></li>
+				<li><a href="https://www.google.com/services/">Business</a></li>
+				<li><a href="https://www.google.com/intl/en/about.html">About</a></li>
+			</ul>
+			<ul id="right-nav">
+				<li><a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a></li>
+				<li><a href="https://www.google.com/preferences">Settings</a></li>
+				<li><a href="https://www.google.co.mz">Use Google.co.mz</a></li>
+			</ul>
+		</footer class="min-window">
+	</div>
+	<script type="text/javascript">
+function changeColor() {
+	var spanbox = document.getElementsByTagName("span")[1]
+	spanbox.setAttribute("class", "colorbox");
+}
+function defaultColor() {
+	var spanbox = document.getElementsByTagName("span")[1]
+	spanbox.removeAttribute("class");
+}
+function inputFocus() {
+	var inputbox = document.getElementById("search-box");
+	inputbox.focus()
+}
+	</script>
 </body>
 </html>

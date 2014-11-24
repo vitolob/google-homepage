@@ -4,8 +4,11 @@
 
 html,
 body {
-	margin: 0;
 	height: 100%;
+	margin: 0;
+}
+
+body {
 	font-family: arial,sans-serif;
 }
 
@@ -19,6 +22,15 @@ li {
 
 a {
 	text-decoration: none;
+}
+
+#wrapper {
+	height: 460px;
+	position: relative;
+}
+
+.min-window {
+	min-width: 980px;
 }
 
 /***********************
@@ -82,23 +94,29 @@ main {
 }
 
 main img {
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
-#search-box {
+#box {
+	display: inline-block;
 	border: 1px solid #cdcdcd;
 	border-color: rgba(0,0,0,.15);
-	width: 524px;
-	height: 18px;
 	padding: 5px 37px 5px 9px;
 }
 
-input#search-box:hover {
+span#box.colorbox {
+	border: 1px solid #4285f4 !important;
+}
+
+span#box:hover {
 	border-color: rgba(0,0,0,.3);
 }
 
-input#search-box:focus {
-	border: 1px solid #4285f4;
+#search-box {
+	border: 0;
+	padding: 0;
+	width: 524px;
+	height: 17px;
 	outline: 0;
 }
 
@@ -126,12 +144,12 @@ input#search-box:focus {
 ************************/
 
 footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	font-size: small;
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
+	bottom: 0;
+	position: absolute;
 }
 
 footer a {
@@ -154,4 +172,13 @@ footer a:hover {
 
 #left-nav li, #right-nav li {
 	padding: 0 13px;
+}
+
+/***********************
+	MEDIA QUERIES
+************************/
+@media screen and (min-height: 460px) {
+	#wrapper {
+		min-height: 100%;
+	}
 }
