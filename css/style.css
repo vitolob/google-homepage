@@ -25,7 +25,8 @@ a {
 }
 
 #wrapper {
-	height: 460px;
+	height: 100%;
+	min-height: 460px;
 	position: relative;
 }
 
@@ -93,7 +94,7 @@ main {
 	padding-top: 100px;
 }
 
-main img {
+main img#main-logo {
 	margin-bottom: 19px;
 }
 
@@ -132,6 +133,7 @@ span#box:hover {
 	margin: 0 6px;
 	font-weight: bold;
 	font-size: 11px;
+	font: bold 11px Arial,sans-serif !important; /*Firefox reset*/
 }
 
 #search-buttons button:focus {
@@ -177,8 +179,3 @@ footer a:hover {
 /***********************
 	MEDIA QUERIES
 ************************/
-@media screen and (min-height: 460px) {
-	#wrapper {
-		min-height: 100%;
-	}
-}
