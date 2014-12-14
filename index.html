@@ -7,7 +7,7 @@
 </head>
 <body onload="inputFocus()">
 	<div id="wrapper" class="min-window">
-		<header>
+		<header class="clearfix">
 			<ul id="top-nav">
 				<li><a href="https://plus.google.com/">+You</a></li>
 				<li><a href="https://mail.google.com/mail/">Gmail</a></li>
@@ -16,18 +16,18 @@
 				<li><button>Sign in</button></li>
 			</ul>
 		</header>
-		<main>
-			<img src="https://www.google.com/images/srpr/logo11w.png" height="95px" id="main-logo">
-			<br />
-			<span id="box" tabindex="0" onfocus="inputFocus()">
-				<input type="text" id="search-box" onfocus="changeColor()" onblur="defaultColor()">
-				<!-- <a href=""><img src="images/voice_img.gif" alt="Voice Search Logo" height="19px"></a> -->
-			</span>
-			<div id="search-buttons">
-				<button>Google Search</button>
-				<button>I'm Feeling Lucky</button>
-			</div>
-		</main>
+			<main>
+				<img src="https://www.google.com/images/srpr/logo11w.png" height="95px" id="main-logo">
+				<br />
+				<span id="box" tabindex="0" onfocus="inputFocus()">
+					<input type="text" id="search-box" onfocus="changeColor()" onblur="defaultColor()">
+					<!-- <a href=""><img src="images/voice_img.gif" alt="Voice Search Logo" height="19px"></a> -->
+				</span>
+				<div id="search-buttons">
+					<button>Google Search</button>
+					<button>I'm Feeling Lucky</button>
+				</div>
+			</main>
 		<footer>
 			<ul id="left-nav">
 				<li><a href="https://www.google.com/intl/en/ads/">Advertising</a></li>
