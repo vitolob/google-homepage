@@ -98,12 +98,13 @@ a {
 	SEARCH ENGINE UI
 ************************/
 
-main {
+section#main-content {
+	clear: both;
 	text-align: center;
 	padding-top: 100px;
 }
 
-main img#main-logo {
+section#main-content img#main-logo {
 	margin-bottom: 19px;
 }
 
